@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+</head>
+<body>
+    <h1>Bienvenidxs a mi fiesta</h1>
+    <h2>Por favor, confirmar asistencia:</h2>
+    <div class="formulario">
+        <form action="" method="get">
+            <div class="nombre">
+                Nombre
+                <br>
+                <br>
+                <input id="nombre" type="text" name="name">
+            </div>
+            <br>
+            <br>
+            <div class="edad">
+                Edad 
+                <br>
+                <br>
+                <input id="edad" type="text" name="age">
+            </div>
+            <br>
+            <br>
+            <div class="estado">
+                Estado civil
+                <br>
+                <br>
+                <input type="radio" name="status" value="single"><span>Quiero conocer gente</span>
+                <br>
+                <br>
+                <input type="radio" name="status" value="taken"><span>No me presenten a nadie</span>
+            </div>
+            <br>
+            <br>
+            <div class="nacionalidad">
+                Nacionalidad
+                <br>
+                <br>
+	            <select name="Nacionalidad">
+	                <option value="arg">Argentina</option>
+	                <option value="peru">Peruana</option>
+	                <option value="vnzl">Venezolana</option>
+                </select>
+            </div>
+            <br>
+            <br>
+            <div class="enviar">
+                <input type="submit" name="submit" value="Enviar" />
+            </div>
+        </form>
+    </div>
+    <div class="confirmacion">
+        <h1>Lista de invitadxs</h1>
+        <ul id="lista-de-invitados"></ul>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+body {
+    background-image: url(img/back2.jpg);
+    background-repeat: repeat-y;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Kaushan Script', cursive;
+    color:#a2acbf;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px #626866;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color:#a2acbf;
+    font-size: 21px;
+    text-shadow: 1px 1px 1px #323534;
+}
+
+.formulario {
+    width: 400px;
+    height: 450px;
+    background-color: #a8c2c0;
+    border-radius: 10px;
+    border: solid 2px #cca494;
+    box-shadow: 10px 10px 8px -2px rgba(0,0,0,0.5);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.nombre, .edad, .estado, .nacionalidad, .enviar {
+    color: blanchedalmond;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 600;
+}
+
+.nombre input {
+    border: none;
+    width: 250px;
+    height: 20px;
+    border-radius: 5px;
+    border: solid 2px #cca494;
+}
+
+.edad input {
+    border: none;
+    width: 50px;
+    height: 20px;
+    border-radius: 5px;
+    border: solid 2px #cca494;
+}
+
+.estado input {
+    border: none;
+}
+
+span {
+    font-size: 14px;
+    color: #626866;
+}
+
+select {
+    border: none;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border: solid 2px #cca494;
+}
+
+.enviar input {
+    width: 100px;
+    height: 25px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #e0c8be;
+    font-weight: 600;
+    border-radius: 5px;
+    border: solid 1px #cca494;
+}
+
+.error {
+    background-color: #cca494;
+}
+
+.confirmacion {
+    display: flex;
+    flex-direction: column;
+}
+
+/*CREADAS PARA ADDLIST*/
+
+.lista-confirmacion {
+    width: 400px;
+    height: 130px;
+    background-color: #a8c2c0;
+    border-radius: 10px;
+    border: solid 2px #cca494;
+    box-shadow: 10px 10px 8px -2px rgba(0,0,0,0.5);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px;
+}
+
+.boton-eliminar {
+    margin-top: 25px;
+    width: 100px;
+    height: 50px;
+    background-color: #323534;
+    color: #cca494;
+    font-family: 'Montserrat', sans-serif;
+    border: solid 1px #cca494;
+    border-radius: 5px;
+}
