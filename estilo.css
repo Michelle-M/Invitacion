@@ -97,7 +97,7 @@ select {
 
 .lista-confirmacion {
     width: 400px;
-    height: 130px;
+    height: 180px;
     background-color: #a8c2c0;
     border-radius: 10px;
     border: solid 2px #cca494;
@@ -105,18 +105,38 @@ select {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     font-family: 'Montserrat', sans-serif;
     margin: 20px;
 }
 
 .boton-eliminar {
-    margin-top: 25px;
+    margin-top: 20px;
     width: 100px;
     height: 50px;
     background-color: #323534;
     color: #cca494;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     border: solid 1px #cca494;
     border-radius: 5px;
+    align-self: center;
 }
+
+.categoria {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #626866;
+    font-weight: 600;
+}
+
+.input-editable {
+    border: none;
+    background-color: #a8c2c0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #626866;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+

@@ -99,20 +99,73 @@ function agregarInvitado(nombre, edad, estado, nacionalidad) {
 
   var ul = document.getElementById("lista-de-invitados");
   //console.log(ul)
-  var lista = document.createElement('li');
+  var lista = document.createElement('div');
   
   lista.classList.add('lista-confirmacion');
   
   var nuevoArray = [nombre, edad, estado, nacionalidad];
+  var arrayDesc = ['• Nombre: ', '• Edad: ', '• Estado: ', '• Nacionalidad: ']
   
   for ( var i = 0; i < nuevoArray.length; i++ ) {
+    var div = document.createElement('div');
     var span = document.createElement('span');
-    span.textContent = nuevoArray[i];
-    lista.appendChild(span);
+    span.textContent = arrayDesc[i];
+    span.classList.add('categoria')
+    var input = document.createElement('input');
+    input.value = nuevoArray[i];
+    input.classList.add('input-editable');
+    div.appendChild(span);
+    div.appendChild(input);
+    lista.appendChild(div);
   }
 
   //Si descomento no me aparecen espaciados
   //lista.textContent = 'Nombre: ' + nombre + 'Edad: ' + edad + 'Preferencia: ' + estado + 'Nacionalidad: ' + nacionalidad
+
+  //NO EDITABLE
+
+  /*var nombreRes = document.createElement('p');
+  nombreRes.textContent = '• Nombre: ' + nombre;
+  nombreRes.classList.add('p');
+
+  lista.appendChild(nombreRes);
+
+  var edadRes = document.createElement('p');
+  edadRes.textContent = '• Edad: ' + edad;
+
+  lista.appendChild(edadRes);
+
+  var nacionalidadRes = document.createElement('p');
+  nacionalidadRes.textContent = '• Nacionalidad: ' + nacionalidad;
+
+  lista.appendChild(nacionalidadRes);
+
+  var estadoRes = document.createElement('p');
+  estadoRes.textContent = '• Estado: ' + estado;
+
+  lista.appendChild(estadoRes)*/
+
+  //EDITABLE CON INPUT
+
+  /*var nombreInput = document.createElement('input');
+  nombreInput.value = '• Nombre: ' + nombre;
+  nombreInput.classList.add('input-editable');
+  lista.appendChild(nombreInput)
+
+  var edadInput = document.createElement('input');
+  edadInput.value = '• Edad: ' + edad;
+  edadInput.classList.add('input-editable');
+  lista.appendChild(edadInput);
+
+  var estadoInput = document.createElement('input');
+  estadoInput.value = '• Estado: ' + estado;
+  estadoInput.classList.add('input-editable');
+  lista.appendChild(estadoInput);
+
+  var nacionalidadInput = document.createElement('input');
+  nacionalidadInput.value = '• Nacionalidad: ' + nacionalidad;
+  nacionalidadInput.classList.add('input-editable');
+  lista.appendChild(nacionalidadInput);*/
   
   ul.appendChild(lista);
   
@@ -124,7 +177,7 @@ function agregarInvitado(nombre, edad, estado, nacionalidad) {
   botonEliminar.onclick = function() {
     botonEliminar.parentNode.remove()
   }
-
+  
 }
 
 
