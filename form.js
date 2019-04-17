@@ -93,8 +93,8 @@ function agregarInvitado(nombre, edad, estado, nacionalidad) {
     nacionalidad = 'Argentinx';
   } else if ( nacionalidad === 'peru' ) {
     nacionalidad = 'Peruanx'
-  } else if ( nacionalidad === 'vnlz' ) {
-    nacionalidad = 'Venezonalx'
+  } else if ( nacionalidad === 'vnzl' ) {
+    nacionalidad = 'Venezolanx'
   }
 
   var ul = document.getElementById("lista-de-invitados");
